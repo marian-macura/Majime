@@ -156,13 +156,43 @@ html, body {
   color: white !important;
 }
 
+.button-primary-ghost {
+  background-color: #dcf1f4 !important;
+  color: #369ca9 !important;
+}
+
+.button-primary-outline {
+  background-color: #ffffff00 !important;
+  color: #55bcc9 !important;
+  border: 1px solid #55bcc9 !important;
+}
+
 .button-primary:hover {
-  background-color: #42a8b6 !important;
+  background-color: #369ca9 !important;
+  color: white !important;
+}
+
+.button-primary-ghost:hover {
+  background-color: #c9eaee !important;
+}
+
+.button-primary-outline:hover {
+  background-color: #55bcc9 !important;
   color: white !important;
 }
 
 .button-primary:active {
-  background-color: #3099a7 !important;
+  background-color: #33939f !important;
+}
+
+.button-primary-ghost:active {
+  background-color: #b8e3e8 !important;
+}
+
+.button-primary-outline:active {
+  background-color: #33939f !important;
+  border-color: #33939f !important;
+  border: 1px solid;
 }
 
 .button-secondary {
@@ -170,13 +200,43 @@ html, body {
   color: white !important;
 }
 
+.button-secondary-ghost {
+  background-color: #7ef0c2 !important;
+  color: #0d6e47 !important;
+}
+
+.button-secondary-outline {
+  background-color: #ffffff00 !important;
+  color: #14a76c !important;
+  border: 1px solid #14a76c !important;
+}
+
 .button-secondary:hover {
-  background-color: #159260 !important;
+  background-color: #0d6e47 !important;
+  color: white !important;
+}
+
+.button-secondary-ghost:hover {
+  background-color: #67edb7 !important;
+}
+
+.button-secondary-outline:hover {
+  background-color: #14a76c !important;
   color: white !important;
 }
 
 .button-secondary:active {
-  background-color: #138155 !important;
+  background-color: #0c6340 !important;
+}
+
+.button-secondary-ghost:active {
+  background-color: #53eaad !important;
+}
+
+.button-secondary-outline:active {
+  background-color: #0c6340 !important;
+  border-color: #0c6340 !important;
+  border: 1px solid;
 }
 
 .button-warning {
@@ -184,27 +244,87 @@ html, body {
   color: white !important;
 }
 
+.button-warning-ghost {
+  background-color: #e8b5bf !important;
+  color: #82293a !important;
+}
+
+.button-warning-outline {
+  background-color: #ffffff00 !important;
+  color: #b23850 !important;
+  border: 1px solid #b23850 !important;
+}
+
 .button-warning:hover {
-  background-color: #a13046 !important;
+  background-color: #82293a !important;
+  color: white !important;
+}
+
+.button-warning-ghost:hover {
+  background-color: #e2a1ae !important;
+}
+
+.button-warning-outline:hover {
+  background-color: #b23850 !important;
   color: white !important;
 }
 
 .button-warning:active {
-  background-color: #94283e !important;
+  background-color: #782636 !important;
+}
+
+.button-warning-ghost:active {
+  background-color: #dc909f !important;
+}
+
+.button-warning-outline:active {
+  background-color: #782636 !important;
+  border-color: #782636 !important;
+  border: 1px solid;
 }
 
 .button-nostalgia {
-  background-color: #e9b658 !important;
+  background-color: #c9a224 !important;
   color: white !important;
 }
 
+.button-nostalgia-ghost {
+  background-color: #f1e1af !important;
+  color: #93761a !important;
+}
+
+.button-nostalgia-outline {
+  background-color: #ffffff00 !important;
+  color: #c9a224 !important;
+  border: 1px solid #c9a224 !important;
+}
+
 .button-nostalgia:hover {
-  background-color: #ddaa4b !important;
+  background-color: #93761a !important;
+  color: white !important;
+}
+
+.button-nostalgia-ghost:hover {
+  background-color: #edd999 !important;
+}
+
+.button-nostalgia-outline:hover {
+  background-color: #c9a224 !important;
   color: white !important;
 }
 
 .button-nostalgia:active {
-  background-color: #d4a244 !important;
+  background-color: #886e18 !important;
+}
+
+.button-nostalgia-ghost:active {
+  background-color: #e9d286 !important;
+}
+
+.button-nostalgia-outline:active {
+  background-color: #886e18 !important;
+  border-color: #886e18 !important;
+  border: 1px solid;
 }
 
 .button-dark {
@@ -212,30 +332,90 @@ html, body {
   color: white !important;
 }
 
+.button-dark-ghost {
+  background-color: #8a8a8a !important;
+  color: #111111 !important;
+}
+
+.button-dark-outline {
+  background-color: #ffffff00 !important;
+  color: #313131 !important;
+  border: 1px solid #313131 !important;
+}
+
 .button-dark:hover {
-  background-color: #252525 !important;
+  background-color: #111111 !important;
+  color: white !important;
+}
+
+.button-dark-ghost:hover {
+  background-color: #7e7e7e !important;
+}
+
+.button-dark-outline:hover {
+  background-color: #313131 !important;
   color: white !important;
 }
 
 .button-dark:active {
-  background-color: #141414 !important;
+  background-color: #0b0b0b !important;
 }
 
-.button-light {
-  background-color: #ebebeb !important;
-  color: black !important;
+.button-dark-ghost:active {
+  background-color: #727272 !important;
 }
 
-.button-light:hover {
-  background-color: #dadada !important;
-  color: black !important;
+.button-dark-outline:active {
+  background-color: #0b0b0b !important;
+  border-color: #0b0b0b !important;
+  border: 1px solid;
 }
 
-.button-light:active {
-  background-color: #cecece !important;
+.button-neon {
+  background-color: #923499 !important;
+  color: white !important;
 }
 
-button, .button-primary, .button-primary:hover, .button-primary:active, .button-secondary, .button-secondary:hover, .button-secondary:active, .button-warning, .button-warning:hover, .button-warning:active, .button-nostalgia, .button-nostalgia:hover, .button-nostalgia:active, .button-dark, .button-dark:hover, .button-dark:active, .button-light, .button-light:hover, .button-light:active {
+.button-neon-ghost {
+  background-color: #dba1df !important;
+  color: #652469 !important;
+}
+
+.button-neon-outline {
+  background-color: #ffffff00 !important;
+  color: #923499 !important;
+  border: 1px solid #923499 !important;
+}
+
+.button-neon:hover {
+  background-color: #652469 !important;
+  color: white !important;
+}
+
+.button-neon-ghost:hover {
+  background-color: #d38ed8 !important;
+}
+
+.button-neon-outline:hover {
+  background-color: #923499 !important;
+  color: white !important;
+}
+
+.button-neon:active {
+  background-color: #5c2160 !important;
+}
+
+.button-neon-ghost:active {
+  background-color: #cd7cd3 !important;
+}
+
+.button-neon-outline:active {
+  background-color: #5c2160 !important;
+  border-color: #5c2160 !important;
+  border: 1px solid;
+}
+
+button, .button-primary, .button-primary-ghost, .button-primary-outline, .button-primary:hover, .button-primary-ghost:hover, .button-primary-outline:hover, .button-primary:active, .button-primary-ghost:active, .button-primary-outline:active, .button-secondary, .button-secondary-ghost, .button-secondary-outline, .button-secondary:hover, .button-secondary-ghost:hover, .button-secondary-outline:hover, .button-secondary:active, .button-secondary-ghost:active, .button-secondary-outline:active, .button-warning, .button-warning-ghost, .button-warning-outline, .button-warning:hover, .button-warning-ghost:hover, .button-warning-outline:hover, .button-warning:active, .button-warning-ghost:active, .button-warning-outline:active, .button-nostalgia, .button-nostalgia-ghost, .button-nostalgia-outline, .button-nostalgia:hover, .button-nostalgia-ghost:hover, .button-nostalgia-outline:hover, .button-nostalgia:active, .button-nostalgia-ghost:active, .button-nostalgia-outline:active, .button-dark, .button-dark-ghost, .button-dark-outline, .button-dark:hover, .button-dark-ghost:hover, .button-dark-outline:hover, .button-dark:active, .button-dark-ghost:active, .button-dark-outline:active, .button-neon, .button-neon-ghost, .button-neon-outline, .button-neon:hover, .button-neon-ghost:hover, .button-neon-outline:hover, .button-neon:active, .button-neon-ghost:active, .button-neon-outline:active {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -264,28 +444,38 @@ button, .button-primary, .button-primary:hover, .button-primary:active, .button-
   word-wrap: break-word;
 }
 
-button:hover, .button-primary:hover, .button-secondary:hover, .button-warning:hover, .button-nostalgia:hover, .button-dark:hover, .button-light:hover {
+button:hover, .button-primary:hover, .button-primary-ghost:hover, .button-primary-outline:hover, .button-secondary:hover, .button-secondary-ghost:hover, .button-secondary-outline:hover, .button-warning:hover, .button-warning-ghost:hover, .button-warning-outline:hover, .button-nostalgia:hover, .button-nostalgia-ghost:hover, .button-nostalgia-outline:hover, .button-dark:hover, .button-dark-ghost:hover, .button-dark-outline:hover, .button-neon:hover, .button-neon-ghost:hover, .button-neon-outline:hover {
   background-color: #F3F4F6;
   text-decoration: none;
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
 }
 
-button:active, .button-primary:active, .button-secondary:active, .button-warning:active, .button-nostalgia:active, .button-dark:active, .button-light:active {
+button:active, .button-primary:active, .button-primary-ghost:active, .button-primary-outline:active, .button-secondary:active, .button-secondary-ghost:active, .button-secondary-outline:active, .button-warning:active, .button-warning-ghost:active, .button-warning-outline:active, .button-nostalgia:active, .button-nostalgia-ghost:active, .button-nostalgia-outline:active, .button-dark:active, .button-dark-ghost:active, .button-dark-outline:active, .button-neon:active, .button-neon-ghost:active, .button-neon-outline:active {
   background-color: #EDEFF2;
   -webkit-transition: none 0s;
   transition: none 0s;
 }
 
-button:focus, .button-primary:focus, .button-secondary:focus, .button-warning:focus, .button-nostalgia:focus, .button-dark:focus, .button-light:focus {
+button:focus, .button-primary:focus, .button-primary-ghost:focus, .button-primary-outline:focus, .button-secondary:focus, .button-secondary-ghost:focus, .button-secondary-outline:focus, .button-warning:focus, .button-warning-ghost:focus, .button-warning-outline:focus, .button-nostalgia:focus, .button-nostalgia-ghost:focus, .button-nostalgia-outline:focus, .button-dark:focus, .button-dark-ghost:focus, .button-dark-outline:focus, .button-neon:focus, .button-neon-ghost:focus, .button-neon-outline:focus {
   outline: 1px transparent;
 }
 
-button:before, .button-primary:before, .button-primary:hover:before, .button-primary:active:before, .button-secondary:before, .button-secondary:hover:before, .button-secondary:active:before, .button-warning:before, .button-warning:hover:before, .button-warning:active:before, .button-nostalgia:before, .button-nostalgia:hover:before, .button-nostalgia:active:before, .button-dark:before, .button-dark:hover:before, .button-dark:active:before, .button-light:before, .button-light:hover:before, .button-light:active:before {
+button:before, .button-primary:before, .button-primary-ghost:before, .button-primary-outline:before, .button-primary:hover:before, .button-primary-ghost:hover:before, .button-primary-outline:hover:before, .button-primary:active:before, .button-primary-ghost:active:before, .button-primary-outline:active:before, .button-secondary:before, .button-secondary-ghost:before, .button-secondary-outline:before, .button-secondary:hover:before, .button-secondary-ghost:hover:before, .button-secondary-outline:hover:before, .button-secondary:active:before, .button-secondary-ghost:active:before, .button-secondary-outline:active:before, .button-warning:before, .button-warning-ghost:before, .button-warning-outline:before, .button-warning:hover:before, .button-warning-ghost:hover:before, .button-warning-outline:hover:before, .button-warning:active:before, .button-warning-ghost:active:before, .button-warning-outline:active:before, .button-nostalgia:before, .button-nostalgia-ghost:before, .button-nostalgia-outline:before, .button-nostalgia:hover:before, .button-nostalgia-ghost:hover:before, .button-nostalgia-outline:hover:before, .button-nostalgia:active:before, .button-nostalgia-ghost:active:before, .button-nostalgia-outline:active:before, .button-dark:before, .button-dark-ghost:before, .button-dark-outline:before, .button-dark:hover:before, .button-dark-ghost:hover:before, .button-dark-outline:hover:before, .button-dark:active:before, .button-dark-ghost:active:before, .button-dark-outline:active:before, .button-neon:before, .button-neon-ghost:before, .button-neon-outline:before, .button-neon:hover:before, .button-neon-ghost:hover:before, .button-neon-outline:hover:before, .button-neon:active:before, .button-neon-ghost:active:before, .button-neon-outline:active:before {
   display: none;
 }
 
-button:-webkit-details-marker, .button-primary:-webkit-details-marker, .button-secondary:-webkit-details-marker, .button-warning:-webkit-details-marker, .button-nostalgia:-webkit-details-marker, .button-dark:-webkit-details-marker, .button-light:-webkit-details-marker {
+button:-webkit-details-marker, .button-primary:-webkit-details-marker, .button-primary-ghost:-webkit-details-marker, .button-primary-outline:-webkit-details-marker, .button-secondary:-webkit-details-marker, .button-secondary-ghost:-webkit-details-marker, .button-secondary-outline:-webkit-details-marker, .button-warning:-webkit-details-marker, .button-warning-ghost:-webkit-details-marker, .button-warning-outline:-webkit-details-marker, .button-nostalgia:-webkit-details-marker, .button-nostalgia-ghost:-webkit-details-marker, .button-nostalgia-outline:-webkit-details-marker, .button-dark:-webkit-details-marker, .button-dark-ghost:-webkit-details-marker, .button-dark-outline:-webkit-details-marker, .button-neon:-webkit-details-marker, .button-neon-ghost:-webkit-details-marker, .button-neon-outline:-webkit-details-marker {
   display: none;
+}
+
+.btn-small, .btn-small:hover {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.btn-large, .btn-large:hover {
+  padding: 16px 32px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

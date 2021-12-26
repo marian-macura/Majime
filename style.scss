@@ -100,125 +100,97 @@ $breakpoint-large: 60em; // 960px
 // GRID-END
 
 
+@mixin color-active($property, $color){
+  #{$property}: darken($color, 15%)!important;}
+
+@mixin color-hover($property, $color){
+  #{$property}: darken($color, 12.5%)!important;}
+
+@mixin color-ghost($property, $color){
+  #{$property}: lighten($color, 35%)!important;}
+
+@mixin color-ghost-hover($property, $color){
+  #{$property}: lighten($color, 30%)!important;}
+
+@mixin color-ghost-active($property, $color){
+  #{$property}: lighten($color, 25.5%)!important;}
+
 // BUTTONS
+$transparent: #ffffff00;
+$primary-color: #55bcc9;
+$secondary-color: #14a76c;
+$warning-color: #b23850;
+$nostalgia-color: #c9a224;
+$dark-color: #313131;
+$neon-color: #923499;
 
 
-// PRIMARY-BUTTON
-.button-primary {
-  @extend button;
-  background-color: #55bcc9!important;
-  color: white!important;
+@mixin button($name, $color){
+  .#{$name}{
+    @extend button;
+    background-color: $color!important;
+    color: white!important;
+  }
+
+  .#{$name}-ghost {
+    @extend button;
+    @include color-ghost(background-color, $color);
+    @include color-hover(color, $color);
+  }
+
+  .#{$name}-outline {
+    @extend button;
+    background-color: $transparent!important;
+    color: $color!important;
+    border: 1px solid $color!important;
+  }
+  
+  .#{$name}:hover {
+    @extend button;
+    @include color-hover(background-color, $color);
+    color: white!important;
+  }
+  
+  .#{$name}-ghost:hover {
+    @extend button;
+    @include color-ghost-hover(background-color, $color);
+  }
+  
+  .#{$name}-outline:hover {
+    @extend button;
+    background-color: $color!important;
+    color: white!important;
+  }
+  
+  .#{$name}:active {
+    @extend button;
+    @include color-active(background-color, $color);
+  }
+  
+  .#{$name}-ghost:active {
+    @extend button;
+    @include color-ghost-active(background-color, $color);
+  }
+  
+  .#{$name}-outline:active {
+    @extend button;
+    @include color-active(background-color, $color);
+    @include color-active(border-color, $color);
+    border: 1px solid;
+  }
+
 }
 
-.button-primary:hover {
-  @extend button;
-  background-color: #42a8b6!important;
-  color: white!important;
-}
-
-.button-primary:active {
-  @extend button;
-  background-color: #3099a7!important;
-}
-// PRIMARY-BUTTON-END
-
-// SECONDARY-BUTTON
-.button-secondary {
-  @extend button;
-  background-color: #14a76c!important;
-  color: white!important;
-}
-
-.button-secondary:hover {
-  @extend button;
-  background-color: #159260!important;
-  color: white!important;
-}
-
-.button-secondary:active {
-  @extend button;
-  background-color: #138155!important;
-}
-// SECONDARY-BUTTON-END
-
-// WARNING-BUTTON
-.button-warning {
-  @extend button;
-  background-color: #b23850!important;
-  color: white!important;
-}
-
-.button-warning:hover {
-  @extend button;
-  background-color: #a13046!important;
-  color: white!important;
-}
-
-.button-warning:active {
-  @extend button;
-  background-color: #94283e!important;
-}
-// WARNING-BUTTON-END
+@include button(button-primary, $primary-color);
+@include button(button-secondary, $secondary-color);
+@include button(button-warning, $warning-color);
+@include button(button-nostalgia, $nostalgia-color);
+@include button(button-dark, $dark-color);
+@include button(button-neon, $neon-color);
 
 
-// WARNING-BUTTON
-.button-nostalgia {
-  @extend button;
-  background-color: #e9b658!important;
-  color: white!important;
-}
-
-.button-nostalgia:hover {
-  @extend button;
-  background-color: #ddaa4b!important;
-  color: white!important;
-}
-
-.button-nostalgia:active {
-  @extend button;
-  background-color: #d4a244!important;
-}
-// WARNING-BUTTON-END
 
 
-// DARK-BUTTON
-.button-dark {
-  @extend button;
-  background-color: #313131!important;
-  color: white!important;
-}
-
-.button-dark:hover {
-  @extend button;
-  background-color: #252525!important;
-  color: white!important;
-}
-
-.button-dark:active {
-  @extend button;
-  background-color: #141414!important;
-}
-// DARK-BUTTON-END
-
-
-// LIGHT-BUTTON
-.button-light {
-  @extend button;
-  background-color: #ebebeb!important;
-  color: black!important;
-}
-
-.button-light:hover {
-  @extend button;
-  background-color: #dadada!important;
-  color: black!important;
-}
-
-.button-light:active {
-  @extend button;
-  background-color: #cecece!important;
-}
-// LIGHT-BUTTON-END
 
 
 button {
@@ -267,3 +239,22 @@ button:before {
 button:-webkit-details-marker {
   display: none;
 }
+
+
+
+.btn-small,.btn-small:hover{
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.btn-large,.btn-large:hover{
+  padding: 16px 32px;
+  font-size: 24px;
+}
+
+
+
+
+
+// Navigation
+
